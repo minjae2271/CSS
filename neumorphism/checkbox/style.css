@@ -1,0 +1,32 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+input[type="checkbox"]
+{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    -webkit-appearance: none;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.2),
+                10px 10px 15px rgba(0,0,0,0.1);
+    border-radius: 50%;
+    border: 8px solid #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="checkbox"]::before
+{
+    font-family: "FontAwesome"; 
+	font-weight: 400;
+	content: "\f09a";
+}
