@@ -24,9 +24,17 @@ input[type="checkbox"]
     align-items: center;
 }
 
-input[type="checkbox"]::before
+input[type="checkbox"]:after
 {
-    font-family: "FontAwesome"; 
-	font-weight: 400;
-	content: "\f09a";
+    content: "\f011";
+    font-family: "Font Awesome 5 Free"; 
+	font-weight: 20px;
+}
+
+input[type="checkbox"]:checked
+{
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.2),
+                10px 10px 15px rgba(0,0,0,0.1),
+                inset -10px -10px 15px rgba(255, 255, 255, 0.2),
+                inset 10px 10px 15px rgba(0,0,0,0.1);
 }
