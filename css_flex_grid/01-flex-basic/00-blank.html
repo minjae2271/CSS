@@ -11,16 +11,24 @@
 		.flex-container{
 			display: flex;
 			flex-direction: column;
+			height: 100vh;
+			border: 10px solid red;
+		}
+		.flex-item{
+			flex: 1 0 auto;
 		}
 		@media (min-width: 600px) {
 			.flex-container {
-				display: flex;
 				flex-direction: row;
-				/* flex-direction: column; */
-				/* flex-wrap: wrap; */
+				flex-wrap: wrap;
 			}
 			.flex-item{
-				flex:1;
+				flex: 1 0 50%;
+			}
+		}
+		@media (min-width: 900px){
+			.flex-item{
+				flex: 1 0 30%;
 			}
 		}
 	</style>
@@ -31,6 +39,9 @@
 		<div class="flex-item">aaaaaaa</div>
 		<div class="flex-item">cccccc</div>
 		<div class="flex-item">b</div>
+		<div class="flex-item">ㅇㅇㅇㅇㅇ</div>
+		<div class="flex-item">rrrrrrrrrrrr</div>
+		<div class="flex-item">vvvvvvvvvvvvv</div>
 	</div>
 </body>
 
